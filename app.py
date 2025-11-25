@@ -15,8 +15,8 @@ db.init_app(app)
 # Importar modelos DESPUÉS de crear app y db
 from modelos.poema import Poema
 from modelos.comentario import Comentario
-from modelos.cadaver import CadaverPoema
-from modelos.ronda import Ronda
+from modelos.cadaver import Cadaver
+
 
 # Importar rutas DESPUÉS de modelos
 from rutas.poemas import poemas_bp
