@@ -1,0 +1,17 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Vite / React
+node_modules/
+dist/
+
+# VS Code
+.vscode/
+
+# Sistema
+.DS_Store
