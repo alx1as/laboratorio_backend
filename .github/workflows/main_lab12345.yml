@@ -51,10 +51,11 @@ jobs:
       - name: Login to Azure (basic auth)
         uses: azure/login@v2
         with:
-          cred: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7BE6F18F23CA4519B8A7A27AA4278E6D }}
+          creds: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7BE6F18F23CA4519B8A7A27AA4278E6D }}
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'lab12345'
           slot-name: 'Production'
+
